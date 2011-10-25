@@ -95,6 +95,8 @@ endfunction
 
 :set tabline=%!MyTabLine()
 
+"let g:pathogen_disabled = []
+"call add(g:pathogen_disabled, '')
 call pathogen#infect()
 
 
