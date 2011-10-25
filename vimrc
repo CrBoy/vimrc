@@ -53,5 +53,47 @@ highlight User4 term=underline cterm=underline ctermfg=white
 highlight User5 term=underline cterm=underline ctermfg=cyan
 highlight User6 term=underline cterm=underline ctermfg=white
 
+" tabline
+function MyTabLabel(n)
+	let buflist = tabpagebuflist(a:n)
+	let winnr = tabpagewinnr(a:n)
+	if bufname(buflist[winnr - 1]) == ''
+		return '[No Name]'
+	else
+		return bufname(buflist[winnr - 1])
+endfunction
+
+function MyTabLine()
+	let s = ''
+	for i in range(tabpagenr('$'))
+		" select the highlighting
+		if i + 1 == tabpagenr()
+			let s .= '%#TabLineSel#'
+		else
+			let s .= '%#TabLine#'
+		endif
+
+		" set the tab page number (for mouse clicks)
+"		let s .= '%' . (i + 1) . 'T'
+
+		let s .= ' ' . (i + 1)
+
+		" the label is made by MyTabLabel()
+		let s .= ' %{MyTabLabel(' . (i + 1) . ')} '
+	endfor
+
+	" after the last tab fill with TabLineFill and reset tab page nr
+	let s .= '%#TabLineFill#%T'
+
+	" right-align the label to close the current tab page
+	if tabpagenr('$') > 1
+		let s .= '%=%#TabLine#%999X X '
+	endif
+
+	return s
+endfunction
+
+:set tabline=%!MyTabLine()
+
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
