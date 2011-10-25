@@ -95,8 +95,7 @@ endfunction
 
 :set tabline=%!MyTabLine()
 
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+call pathogen#infect()
 
 
 let g:acp_enableAtStartup = 0 " Disable AutoComplPop.
