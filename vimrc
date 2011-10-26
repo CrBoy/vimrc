@@ -1,5 +1,13 @@
 " CrBoy's vimrc file.
 
+" convenient operation
+set nocompatible
+set autoread
+set autoindent
+set incsearch
+set history=32
+set backspace=indent,eol,start
+
 " display
 set title
 set number
@@ -12,14 +20,6 @@ set ruler
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-
-" convenient operation
-set nocompatible
-set autoread
-set autoindent
-set incsearch
-set history=32
-set backspace=indent,eol,start
 
 " folding
 set foldmethod=syntax
@@ -99,6 +99,7 @@ endfunction
 "call add(g:pathogen_disabled, '')
 call pathogen#infect()
 
+nmap <leader>e :NERDTreeToggle<CR>
 
 let g:acp_enableAtStartup = 0 " Disable AutoComplPop.
 let g:neocomplcache_enable_at_startup = 1 " Use neocomplcache.
