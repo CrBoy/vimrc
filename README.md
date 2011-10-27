@@ -29,12 +29,14 @@ Plug-ins
 - [snipMate]
 - [neocomplcache]
 - [Tagbar]
+- [surround]
 
 [pathogen]: http://www.vim.org/scripts/script.php?script_id=2332
 [NERDTree]: http://www.vim.org/scripts/script.php?script_id=1658
 [snipMate]: http://www.vim.org/scripts/script.php?script_id=2540
 [neocomplcache]: http://www.vim.org/scripts/script.php?script_id=2620
 [Tagbar]: http://www.vim.org/scripts/script.php?script_id=3465
+[surround]: http://www.vim.org/scripts/script.php?script_id=1697
 
 Acknowledgements
 ----------------
