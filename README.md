@@ -1,5 +1,13 @@
 CrBoy's vimrc
 =============
+Author: CrBoy (http://github.com/CrBoy)
+
+Introduction
+------------
+This project is a set of [vim] configurations (vimrc, or vimfiles), which is convenient to the author. If [git] is installed on the machine, these settings could be installed by only one line of command on Linux or MacOSX.
+
+[vim]: http://www.vim.org/
+[git]: http://git-scm.com/
 
 One-Step Install
 ----------------
