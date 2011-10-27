@@ -1,6 +1,7 @@
 " CrBoy's vimrc file.
 
 " convenient operation
+" --------------------
 set nocompatible
 set autoread
 set autoindent
@@ -9,6 +10,7 @@ set history=32
 set backspace=indent,eol,start
 
 " display
+" -------
 set title
 set number
 set cursorline
@@ -17,30 +19,36 @@ set showcmd
 set ruler
 
 " tab spaces
+" ----------
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 
 " folding
+" -------
 set foldmethod=syntax
 set foldlevel=10
 
 " encodings
+" ---------
 set fileencodings=utf-8,big5,latin1,utf-16,utf-16le
 set encoding=utf-8
 set termencoding=utf-8
 
 " filetypes
+" ---------
 filetype on
 filetype plugin on
 filetype indent on
 
-" syntax highloght
+" syntax highlight
+" ----------------
 syntax on
 set t_Co=256
 colorscheme desert
 
 " status line
+" -----------
 set laststatus=2
 set statusline=%4*%<\ %1*[%F]
 set statusline+=%4*\ %5*[%{&fileencoding}, " encoding
@@ -54,6 +62,7 @@ highlight User5 term=underline cterm=underline ctermfg=cyan
 highlight User6 term=underline cterm=underline ctermfg=white
 
 " tabline
+" -------
 function MyTabLabel(n)
 	let buflist = tabpagebuflist(a:n)
 	let winnr = tabpagewinnr(a:n)
@@ -95,12 +104,23 @@ endfunction
 
 :set tabline=%!MyTabLine()
 
+" pathogen
+" --------
 "let g:pathogen_disabled = []
 "call add(g:pathogen_disabled, '')
 call pathogen#infect()
 
+" NERDTree
+" --------
 nmap <leader>e :NERDTreeToggle<CR>
 
+" Tagbar
+" ------
+nmap <leader>t :TagbarToggle<CR>
+let g:tagbar_autofocus = 1
+
+" neocomplcache
+" -------------
 let g:acp_enableAtStartup = 0 " Disable AutoComplPop.
 let g:neocomplcache_enable_at_startup = 1 " Use neocomplcache.
 let g:neocomplcache_enable_smart_case = 1 " Use smartcase.
