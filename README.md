@@ -1,6 +1,6 @@
 CrBoy's vimrc
 =============
-Author: CrBoy (http://github.com/CrBoy)
+`Author: CrBoy (http://github.com/CrBoy)`
 
 Introduction
 ------------
