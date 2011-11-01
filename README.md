@@ -38,6 +38,7 @@ Plug-ins
 - [neocomplcache]
 - [Tagbar]
 - [surround]
+- [OmniCppComplete]
 
 [pathogen]: http://www.vim.org/scripts/script.php?script_id=2332
 [NERDTree]: http://www.vim.org/scripts/script.php?script_id=1658
@@ -45,6 +46,7 @@ Plug-ins
 [neocomplcache]: http://www.vim.org/scripts/script.php?script_id=2620
 [Tagbar]: http://www.vim.org/scripts/script.php?script_id=3465
 [surround]: http://www.vim.org/scripts/script.php?script_id=1697
+[OmniCppComplete]: http://www.vim.org/scripts/script.php?script_id=1520
 
 Acknowledgements
 ----------------
