@@ -63,7 +63,7 @@ highlight User6 term=underline cterm=underline ctermfg=white
 
 " tabline
 " -------
-function MyTabLabel(n)
+function! MyTabLabel(n)
 	let buflist = tabpagebuflist(a:n)
 	let winnr = tabpagewinnr(a:n)
 	if bufname(buflist[winnr - 1]) == ''
@@ -72,7 +72,7 @@ function MyTabLabel(n)
 		return bufname(buflist[winnr - 1])
 endfunction
 
-function MyTabLine()
+function! MyTabLine()
 	let s = ''
 	for i in range(tabpagenr('$'))
 		" select the highlighting
