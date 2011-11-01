@@ -19,7 +19,7 @@ Using curl (MacOSX should have curl):
 
 or wget (Linux often has wget):
 
-	wget -o - https://raw.github.com/CrBoy/vimrc/master/one-step-install.sh|sh
+	wget -O - https://raw.github.com/CrBoy/vimrc/master/one-step-install.sh|sh
 
 Features
 --------
