@@ -48,6 +48,9 @@ syntax on
 set t_Co=256
 colorscheme desert
 
+" Spell checking for LaTeX files
+autocmd FileType tex set spell
+
 " status line
 " -----------
 set laststatus=2
