@@ -13,7 +13,5 @@ git clone git://github.com/CrBoy/vimrc.git "$VIMFILES"
 cd "$VIMFILES"
 git submodule update --init
 
-./install.sh
-
-echo "CrBoy's vimrc installed."
+./install.sh && echo "CrBoy's vimrc installed."
 
