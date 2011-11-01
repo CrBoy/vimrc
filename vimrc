@@ -48,6 +48,11 @@ syntax on
 set t_Co=256
 colorscheme desert
 
+" one-step compile/build
+autocmd FileType c,cpp nmap <F9> :w<CR> :make<CR>
+autocmd FileType c nmap <F5> :w<CR> :!gcc -Wall -g -o %:r %<CR> :!./%:r<CR>
+autocmd FileType cpp nmap <F5> :w<CR> :!g++ -Wall -g -o %:r %<CR> :!./%:r<CR>
+
 " Spell checking for LaTeX files
 autocmd FileType tex set spell
 
