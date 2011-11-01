@@ -8,6 +8,7 @@ set autoindent
 set incsearch
 set history=32
 set backspace=indent,eol,start
+set clipboard=unnamed
 
 " display
 " -------
