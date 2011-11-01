@@ -127,6 +127,7 @@ nmap <leader>e :NERDTreeToggle<CR>
 " ------
 nmap <leader>t :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
+let g:tagbar_sort = 0
 
 " neocomplcache
 " -------------
