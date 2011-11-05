@@ -129,6 +129,10 @@ nmap <leader>t :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
 let g:tagbar_sort = 0
 
+" Gist
+" ----
+let g:gist_detect_filetype = 1
+
 " neocomplcache
 " -------------
 let g:acp_enableAtStartup = 0 " Disable AutoComplPop.
