@@ -1,5 +1,11 @@
 " CrBoy's vimrc file.
 
+" settings for gvim on windows
+" ----------------------------
+set nobackup
+set guifont=Consolas:h12:cANSI
+set directory=.,$TEMP
+
 " convenient operation
 " --------------------
 set nocompatible
@@ -33,7 +39,7 @@ set foldlevel=10
 " encodings
 " ---------
 set fileencodings=utf-8,big5,latin1,utf-16,utf-16le
-set encoding=utf-8
+set encoding=big5
 set termencoding=utf-8
 
 " filetypes
