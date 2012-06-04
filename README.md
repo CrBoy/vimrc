@@ -39,7 +39,6 @@ Plug-ins
 - [Tagbar]
 - [surround]
 - [OmniCppComplete]
-- [Gist]
 
 [pathogen]: http://www.vim.org/scripts/script.php?script_id=2332
 [NERDTree]: http://www.vim.org/scripts/script.php?script_id=1658
@@ -48,7 +47,6 @@ Plug-ins
 [Tagbar]: http://www.vim.org/scripts/script.php?script_id=3465
 [surround]: http://www.vim.org/scripts/script.php?script_id=1697
 [OmniCppComplete]: http://www.vim.org/scripts/script.php?script_id=1520
-[Gist]: http://www.vim.org/scripts/script.php?script_id=2423
 
 Acknowledgements
 ----------------
