@@ -19,6 +19,3 @@
 [submodule "bundle/OmniCppComplete"]
 	path = bundle/OmniCppComplete
 	url = https://github.com/vim-scripts/OmniCppComplete.git
-[submodule "bundle/gist"]
-	path = bundle/gist
-	url = https://github.com/mattn/gist-vim.git
