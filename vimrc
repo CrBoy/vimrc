@@ -129,6 +129,10 @@ nmap <leader>t :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
 let g:tagbar_sort = 0
 
+" snipMate
+" --------
+let g:snippets_dir = "~/.vim/snippets/"
+
 " Gist
 " ----
 let g:gist_detect_filetype = 1
