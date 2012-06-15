@@ -135,6 +135,10 @@ nmap <leader>t :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
 let g:tagbar_sort = 0
 
+" snipMate
+" --------
+let g:snippets_dir = "~/.vim/snippets/"
+
 " neocomplcache
 " -------------
 let g:acp_enableAtStartup = 0 " Disable AutoComplPop.
