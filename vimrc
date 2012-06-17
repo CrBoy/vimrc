@@ -218,9 +218,9 @@ let g:neocomplcache_omni_patterns.cpp = '\h\w*\%(\.\|->\)\h\w*\|\h\w*::'
 " OmniCppComplete
 " ---------------
 map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
-set tags+=~/.vim/tags/tags
-set tags+=~/.vim/tags/c++.tags
-set tags+=~/.vim/tags/stl-3.3.tags
+set tags+=~/vimfiles/tags/tags
+set tags+=~/vimfiles/tags/c++.tags
+set tags+=~/vimfiles/tags/stl-3.3.tags
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
