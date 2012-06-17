@@ -143,7 +143,7 @@ let g:tagbar_sort = 0
 
 " snipMate
 " --------
-let g:snippets_dir = "~/.vim/snippets/"
+let g:snippets_dir = "~/vimfiles/snippets/"
 
 " neocomplcache
 " -------------
