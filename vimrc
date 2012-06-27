@@ -6,6 +6,12 @@ set nobackup
 set guifont=Consolas:h12:cANSI
 set directory=.,$TEMP
 
+" disable input method when not on insert mode
+" --------------------------------------------
+set imdisable
+autocmd InsertEnter * set noimdisable
+autocmd InsertLeave * set imdisable
+
 " convenient operation
 " --------------------
 set nocompatible
