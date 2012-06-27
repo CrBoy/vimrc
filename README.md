@@ -4,22 +4,29 @@ CrBoy's vimrc
 
 Introduction
 ------------
-This project is a set of [vim] configurations (vimrc, or vimfiles), which is convenient to the author. If [git] is installed on the machine, these settings could be installed by only one line of command on Linux or MacOSX.
+This project is a set of [vim] configurations (vimrc, or vimfiles), which is convenient to the author. If [git] is installed on the machine, these settings could be installed by only one line of command on Windows.
 
 [vim]: http://www.vim.org/
 [git]: http://git-scm.com/
 
-One-Step Install
+Install
 ----------------
 **Prerequisite: Make sure GIT is installed**
 
-Using curl (MacOSX should have curl):
+Windows 7 (or Vista, I did not tested on it)
 
-	curl -o - https://raw.github.com/CrBoy/vimrc/master/one-step-install.sh|sh
+- Clone this repository into your machine, and put it on %UserProfile%\vimfiles
+- Run the install.bat **as system administrator** (this script using `mklink` which is only available by admins)
 
-or wget (Linux often has wget):
+Windows XP
 
-	wget -O - https://raw.github.com/CrBoy/vimrc/master/one-step-install.sh|sh
+1. Clone this repository into your machine, and put it on %UserProfile%\vimfiles
+2. Create folder `vimfiles\autoload` and copy `vimfiles\bundle\pathogen\autoload\pathogen.vim` into it
+3. Copy `vimfiles\vimrc` to `%UserProfile%\_vimrc`
+
+Note that copying file would cause the version of file dismatch. If you'd like to modify them, don't forget sync them manually.
+
+**No matter you are using which version of Windows, you may download the files instead of using git-clone.**
 
 Features
 --------
