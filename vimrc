@@ -15,6 +15,12 @@ set incsearch
 set history=32
 set backspace=indent,eol,start
 set clipboard=unnamed
+set undofile
+
+" command mode completion
+" ----------------------------
+set wildmode=full
+set wildmenu
 
 " display
 " -------
@@ -135,6 +141,10 @@ nmap <leader>t :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
 let g:tagbar_sort = 0
 
+" snipMate
+" --------
+let g:snippets_dir = "~/vimfiles/snippets/"
+
 " neocomplcache
 " -------------
 let g:acp_enableAtStartup = 0 " Disable AutoComplPop.
@@ -208,9 +218,9 @@ let g:neocomplcache_omni_patterns.cpp = '\h\w*\%(\.\|->\)\h\w*\|\h\w*::'
 " OmniCppComplete
 " ---------------
 map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
-set tags+=~/.vim/tags/tags
-set tags+=~/.vim/tags/c++.tags
-set tags+=~/.vim/tags/stl-3.3.tags
+set tags+=~/vimfiles/tags/tags
+set tags+=~/vimfiles/tags/c++.tags
+set tags+=~/vimfiles/tags/stl-3.3.tags
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
