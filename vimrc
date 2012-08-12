@@ -10,6 +10,8 @@ set history=32
 set backspace=indent,eol,start
 set clipboard=unnamed
 set undofile
+set undodir=~/.vim/undo
+set listchars=tab:>-,eol:$
 
 " command mode completion
 " ----------------------------
