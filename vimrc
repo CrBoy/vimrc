@@ -1,5 +1,13 @@
 " CrBoy's vimrc file.
 
+" Vundle
+" ------
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+Bundle 'gmarik/vundle'
+
 " convenient operation
 " --------------------
 set nocompatible
@@ -121,32 +129,36 @@ endfunction
 
 :set tabline=%!MyTabLine()
 
-" pathogen
-" --------
-"let g:pathogen_disabled = []
-"call add(g:pathogen_disabled, '')
-call pathogen#infect()
+" Plugins
+" =======
+
+"Bundle 'tpope/vim-surround.git'
 
 " NERDTree
 " --------
+Bundle 'scrooloose/nerdtree'
 nmap <leader>e :NERDTreeToggle<CR>
 
 " Tagbar
 " ------
+Bundle 'majutsushi/tagbar.git'
 nmap <leader>t :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
 let g:tagbar_sort = 0
 
 " snipMate
 " --------
+Bundle 'msanders/snipmate.vim.git'
 let g:snippets_dir = "~/.vim/snippets/"
 
 " Gist
 " ----
-let g:gist_detect_filetype = 1
+"Bundle 'mattn/gist-vim.git'
+"let g:gist_detect_filetype = 1
 
 " neocomplcache
 " -------------
+Bundle 'Shougo/neocomplcache.git'
 let g:acp_enableAtStartup = 0 " Disable AutoComplPop.
 let g:neocomplcache_enable_at_startup = 1 " Use neocomplcache.
 let g:neocomplcache_enable_smart_case = 1 " Use smartcase.
@@ -217,16 +229,17 @@ let g:neocomplcache_omni_patterns.cpp = '\h\w*\%(\.\|->\)\h\w*\|\h\w*::'
 
 " OmniCppComplete
 " ---------------
-map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
-set tags+=~/.vim/tags/tags
-set tags+=~/.vim/tags/c++.tags
-set tags+=~/.vim/tags/stl-3.3.tags
-autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
-autocmd InsertLeave * if pumvisible() == 0|pclose|endif
-let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
-let OmniCpp_MayCompleteDot = 1 " autocomplete with .
-let OmniCpp_MayCompleteArrow = 1 " autocomplete with ->
-let OmniCpp_MayCompleteScope = 1 " autocomplete with ::
-let OmniCpp_SelectFirstItem = 2 " select first item (but don't insert)
-let OmniCpp_NamespaceSearch = 2 " search namespaces in this and included files
+"Bundle 'vim-scripts/OmniCppComplete.git'
+"map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+"set tags+=~/.vim/tags/tags
+"set tags+=~/.vim/tags/c++.tags
+"set tags+=~/.vim/tags/stl-3.3.tags
+"autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+"autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+"let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
+"let OmniCpp_MayCompleteDot = 1 " autocomplete with .
+"let OmniCpp_MayCompleteArrow = 1 " autocomplete with ->
+"let OmniCpp_MayCompleteScope = 1 " autocomplete with ::
+"let OmniCpp_SelectFirstItem = 2 " select first item (but don't insert)
+"let OmniCpp_NamespaceSearch = 2 " search namespaces in this and included files
 
