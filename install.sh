@@ -11,4 +11,5 @@ die(){
 [ -e "$VIMRC" ] && die "$VIMRC already exists."
 
 ln -s "$VIMFILES"/vimrc "$VIMRC"
+vim -c "BundleInstall" -c "qa"
 
