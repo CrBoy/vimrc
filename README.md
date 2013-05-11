@@ -27,21 +27,21 @@ Features
 - Convenient for developers especially C and C++ programmers
 - Tabline with a number for each tab, making tab switching more easily
 - Code/word completions are significant consideration here
-- Using [pathogen] to manage the plug-ins in a better way
+- Using [Vundle] to manage the plug-ins in a better way
 - Each plug-ins is treated as a submodule in `bundle/` (use `git submodule update` to update plug-ins)
 
 Plug-ins
 --------
-- [pathogen]
+- [Vundle]
 - [NERDTree]
 - [snipMate]
 - [neocomplcache]
 - [Tagbar]
-- [surround]
-- [OmniCppComplete]
-- [Gist]
+- [surround]() (Disabled)
+- [OmniCppComplete]() (Disabled)
+- [Gist]() (Disabled)
 
-[pathogen]: http://www.vim.org/scripts/script.php?script_id=2332
+[Vundle]: https://github.com/gmarik/vundle
 [NERDTree]: http://www.vim.org/scripts/script.php?script_id=1658
 [snipMate]: http://www.vim.org/scripts/script.php?script_id=2540
 [neocomplcache]: http://www.vim.org/scripts/script.php?script_id=2620

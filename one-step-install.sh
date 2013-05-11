@@ -9,9 +9,8 @@ die(){
 
 [ -e "$VIMFILES" ] && die "$VIMFILES already exists."
 
-git clone git://github.com/CrBoy/vimrc.git "$VIMFILES"
+git clone --recursive https://github.com/CrBoy/vimrc.git "$VIMFILES"
 cd "$VIMFILES"
-git submodule update --init
 
 ./install.sh && echo "CrBoy's vimrc installed."
 
