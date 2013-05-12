@@ -133,6 +133,7 @@ endfunction
 " =======
 
 "Bundle 'tpope/vim-surround.git'
+Bundle 'terryma/vim-multiple-cursors'
 
 " NERDTree
 " --------

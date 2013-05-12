@@ -40,6 +40,7 @@ Plug-ins
 - [surround]() (Disabled)
 - [OmniCppComplete]() (Disabled)
 - [Gist]() (Disabled)
+- [Vim-Multiple-Cursors]
 
 [Vundle]: https://github.com/gmarik/vundle
 [NERDTree]: http://www.vim.org/scripts/script.php?script_id=1658
@@ -49,6 +50,7 @@ Plug-ins
 [surround]: http://www.vim.org/scripts/script.php?script_id=1697
 [OmniCppComplete]: http://www.vim.org/scripts/script.php?script_id=1520
 [Gist]: http://www.vim.org/scripts/script.php?script_id=2423
+[Vim-Multiple-Cursors]: https://github.com/terryma/vim-multiple-cursors
 
 Acknowledgements
 ----------------
