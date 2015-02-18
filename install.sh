@@ -10,10 +10,11 @@ die(){
 
 cd "$VIMFILES"
 
-# Install NeoBundle
-curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh | sh
-
 [ -e "$VIMRC" ] && die "$VIMRC already exists."
 
 ln -s "$VIMFILES"/vimrc "$VIMRC"
+
+# Install NeoBundle
+curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh | sh
+vim -c "NeoBundleInstall" -c "q"
 
