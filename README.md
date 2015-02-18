@@ -15,11 +15,11 @@ One-Step Install
 
 Using curl (Mac (OSX) should have curl):
 
-	curl -o - https://raw.github.com/CrBoy/vimrc/master/one-step-install.sh | sh
+	curl -o- https://raw.githubusercontent.com/CrBoy/vimrc/master/one-step-install.sh | sh
 
 or wget (Linux often has wget):
 
-	wget -O - https://raw.github.com/CrBoy/vimrc/master/one-step-install.sh | sh
+	wget -O- https://raw.githubusercontent.com/CrBoy/vimrc/master/one-step-install.sh | sh
 
 Features
 --------
