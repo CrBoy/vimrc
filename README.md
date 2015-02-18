@@ -13,50 +13,41 @@ One-Step Install
 ----------------
 **Prerequisite: Make sure GIT is installed**
 
-Using curl (MacOSX should have curl):
+Using curl (Mac (OSX) should have curl):
 
-	curl -o - https://raw.github.com/CrBoy/vimrc/master/one-step-install.sh|sh
+	curl -o - https://raw.github.com/CrBoy/vimrc/master/one-step-install.sh | sh
 
 or wget (Linux often has wget):
 
-	wget -O - https://raw.github.com/CrBoy/vimrc/master/one-step-install.sh|sh
+	wget -O - https://raw.github.com/CrBoy/vimrc/master/one-step-install.sh | sh
 
 Features
 --------
 - Convenient for Traditional Chinese users (set fileencodings)
-- Convenient for developers especially C and C++ programmers
 - Tabline with a number for each tab, making tab switching more easily
-- Code/word completions are significant consideration here
-- Using [Vundle] to manage the plug-ins in a better way
-- Each plug-ins is treated as a submodule in `bundle/` (use `git submodule update` to update plug-ins)
+- Using [NeoBundle] to manage the plug-ins in a better way
 
 Plug-ins
 --------
-- [Vundle]
+- [NeoBundle]
+- [CtrlP]
+- [vim-airline]
 - [NERDTree]
-- [snipMate]
-- [neocomplcache]
-- [Tagbar]
-- [surround]() (Disabled)
-- [OmniCppComplete]() (Disabled)
-- [Gist]() (Disabled)
-- [Vim-Multiple-Cursors]
+- [surround]
+- [vim-multiple-Cursors]
 
-[Vundle]: https://github.com/gmarik/vundle
-[NERDTree]: http://www.vim.org/scripts/script.php?script_id=1658
-[snipMate]: http://www.vim.org/scripts/script.php?script_id=2540
-[neocomplcache]: http://www.vim.org/scripts/script.php?script_id=2620
-[Tagbar]: http://www.vim.org/scripts/script.php?script_id=3465
-[surround]: http://www.vim.org/scripts/script.php?script_id=1697
-[OmniCppComplete]: http://www.vim.org/scripts/script.php?script_id=1520
-[Gist]: http://www.vim.org/scripts/script.php?script_id=2423
-[Vim-Multiple-Cursors]: https://github.com/terryma/vim-multiple-cursors
+[NeoBundle]: https://github.com/Shougo/neobundle.vim
+[CtrlP]: https://github.com/ctrlpvim/ctrlp.vim
+[vim-airline]: https://github.com/bling/vim-airline
+[NERDTree]: https://github.com/scrooloose/nerdtree
+[surround]: https://github.com/tpope/vim-surround
+[vim-multiple-cursors]: https://github.com/terryma/vim-multiple-cursors
 
 Acknowledgements
 ----------------
 - The project refers to [vgod] and [vgod's vimrc]. I'm really thanks to him showing amazing tips. :D
 - [c9s] brings me spirits of vim and git.
-- I learned the usage of git-submodule from [here][git-submodule].
+- I learned the usage of git-submodule from [here][git-submodule]. (Older version uses git-submodule to manage plugins)
 
 [vgod]: https://github.com/vgod
 [vgod's vimrc]: https://github.com/vgod/vimrc
