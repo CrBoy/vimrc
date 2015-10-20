@@ -28,6 +28,9 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'tpope/vim-surround.git'
 NeoBundle 'terryma/vim-multiple-cursors'
 
+" You can specify revision/branch/tag.
+" NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
+
 " Required:
 call neobundle#end()
 
