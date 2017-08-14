@@ -8,7 +8,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'bling/vim-airline'
 Plug 'scrooloose/nerdtree'
-Plug 'tpope/vim-surround.git'
+Plug 'tpope/vim-surround'
 Plug 'terryma/vim-multiple-cursors'
 
 call plug#end()
