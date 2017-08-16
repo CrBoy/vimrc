@@ -6,9 +6,10 @@ call plug#begin('~/.vim/plugged')
 " Plug 'tpope/vim-fugitive'
 " Plug 'flazz/vim-colorschemes'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree'
-Plug 'tpope/vim-surround.git'
+Plug 'tpope/vim-surround'
 Plug 'terryma/vim-multiple-cursors'
 
 call plug#end()
